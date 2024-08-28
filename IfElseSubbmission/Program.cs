@@ -137,42 +137,58 @@
 //8. Weekdays 
 
 
-Console.WriteLine("Tell me a number between 1-7 and I'll tell which day of the week the number represents.");
-string weekDayString = Console.ReadLine();
-int weekDayNumber = Convert.ToInt32(weekDayString);
+//Console.WriteLine("Tell me a number between 1-7 and I'll tell which day of the week the number represents.");
+//string weekDayString = Console.ReadLine();
+//int weekDayNumber = Convert.ToInt32(weekDayString);
 
-if(weekDayNumber == 1)
-{
-    Console.WriteLine("Monday");
-}
-if (weekDayNumber == 2)
-{
-    Console.WriteLine("Tuesday");
-}
-if (weekDayNumber == 3)
-{
-    Console.WriteLine("Wednesday");
-}
-if (weekDayNumber == 4)
-{
-    Console.WriteLine("Thursday");
-}
-if (weekDayNumber == 5 )
-{
-    Console.WriteLine("Friday");
-}
-if (weekDayNumber == 6)
-{
-    Console.WriteLine("Saturday");
-}
-if (weekDayNumber == 7)
-{
-    Console.WriteLine("Sunday");
-}
-else if (weekDayNumber >= 8 || weekDayNumber <= 0)
-{
-    Console.WriteLine("Error, you didnt put a number between 1 -7.");
-}
+//if(weekDayNumber == 1)
+//{
+//    Console.WriteLine("Monday");
+//}
+//if (weekDayNumber == 2)
+//{
+//    Console.WriteLine("Tuesday");
+//}
+//if (weekDayNumber == 3)
+//{
+//    Console.WriteLine("Wednesday");
+//}
+//if (weekDayNumber == 4)
+//{
+//    Console.WriteLine("Thursday");
+//}
+//if (weekDayNumber == 5 )
+//{
+//    Console.WriteLine("Friday");
+//}
+//if (weekDayNumber == 6)
+//{
+//    Console.WriteLine("Saturday");
+//}
+//if (weekDayNumber == 7)
+//{
+//    Console.WriteLine("Sunday");
+//}
+//else if (weekDayNumber >= 8 || weekDayNumber <= 0)
+//{
+//    Console.WriteLine("Error, you didnt put a number between 1 -7.");
+//}
 
 
 //9. Password checker
+
+string password = "CSharp123";
+
+Console.WriteLine("Password please.");
+string passwordCheck = Console.ReadLine();
+
+if (passwordCheck == password)
+{
+    Console.WriteLine("Access granted.");
+}
+else if (password != passwordCheck)
+{
+    Console.WriteLine("Access denied!");
+}
+
+//10. Temperature converter
