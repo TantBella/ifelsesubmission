@@ -62,17 +62,41 @@
 
 //4. Leap year checker 0=true 1 = false
 
-Console.WriteLine("Please write a random year. (Four numbers)");
-string randomYearString = Console.ReadLine();
-int randomYear = int.Parse(randomYearString);
-bool leapYear = (randomYear % 4 == 0 && randomYear % 100 != 0) || (randomYear % 400 == 0);
+//Console.WriteLine("Please write a random year. (Four numbers)");
+//string randomYearString = Console.ReadLine();
+//int randomYear = int.Parse(randomYearString);
+//bool leapYear = (randomYear % 4 == 0 && randomYear % 100 != 0) || (randomYear % 400 == 0);
 
-if (leapYear) {
-    Console.WriteLine(randomYear + " is a leap year. ");
+//if (leapYear) {
+//    Console.WriteLine(randomYear + " is a leap year. ");
+//}
+//else
+//{
+//    Console.WriteLine(randomYear + " is not a leap year. ");
+//}
+
+//5. Maximum of three (biggest number?)
+
+Console.WriteLine("Give me three different numbers, please. One at a time.");
+string firstNumberString = Console.ReadLine();
+string secondNumberString = Console.ReadLine();
+string thirdNumberString = Console.ReadLine();
+
+int firstNumber = Convert.ToInt32(firstNumberString);
+int secondNumber = Convert.ToInt32(secondNumberString);
+int thirdNumber = Convert.ToInt32(thirdNumberString);
+
+if(firstNumber > secondNumber && firstNumber > thirdNumber ) {
+    Console.WriteLine("The first number you wrote, " + firstNumber + ", was the biggest one.");
 }
-else
+if(secondNumber > thirdNumber && secondNumber  > firstNumber)
 {
-    Console.WriteLine(randomYear + " is not a leap year. ");
+    Console.WriteLine("The second number you wrote, " + secondNumber + ", was the biggest one.");
 }
+else if(thirdNumber > secondNumber && thirdNumber > firstNumber)
+{
+    Console.WriteLine("The third number you wrote, " + thirdNumber + ", was the biggest one.");
+ }
 
-//5. Maximum of three
+//6. Positive, negative or zero
+
