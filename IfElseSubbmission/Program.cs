@@ -100,24 +100,40 @@
 
 //6. Positive, negative or zero
 
-Console.WriteLine("Please put in any kind of number.");
-string inputNumberString = Console.ReadLine();
-int inputNumber = Convert.ToInt32(inputNumberString);
+//Console.WriteLine("Please put in any kind of number.");
+//string inputNumberString = Console.ReadLine();
+//int inputNumber = Convert.ToInt32(inputNumberString);
 
-if(inputNumber > 0)
-{
-    Console.WriteLine(inputNumber + " is positive. ");
-}
-if(inputNumber < 0)
-{
-    Console.WriteLine(inputNumber + " is negative. ");
-}
-else if(inputNumber == 0)
-{
-    Console.WriteLine("Your number is zero. ");
-}
+//if(inputNumber > 0)
+//{
+//    Console.WriteLine(inputNumber + " is positive. ");
+//}
+//if(inputNumber < 0)
+//{
+//    Console.WriteLine(inputNumber + " is negative. ");
+//}
+//else if(inputNumber == 0)
+//{
+//    Console.WriteLine("Your number is zero. ");
+//}
 
 //7. Discount system
 
+Console.WriteLine("How much was your purchase?");
+string purchaseString = Console.ReadLine();
+int purchase = Convert.ToInt32(purchaseString);
+
+if(purchase >= 1000)
+{
+    Console.WriteLine("Since your purchase was more than a $1000, I'll give you a discount.. You can pay "
+        + (purchase * 0.9) + " instead. ");
+}
+else if(purchase < 1000)
+{
+    Console.WriteLine("Ok, have a nice day.");
+}
+
+
+//8. Weekdays 
 
 
