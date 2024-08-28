@@ -177,18 +177,40 @@
 
 //9. Password checker
 
-string password = "CSharp123";
+//string password = "CSharp123";
 
-Console.WriteLine("Password please.");
-string passwordCheck = Console.ReadLine();
+//Console.WriteLine("Password please.");
+//string passwordCheck = Console.ReadLine();
 
-if (passwordCheck == password)
-{
-    Console.WriteLine("Access granted.");
-}
-else if (password != passwordCheck)
-{
-    Console.WriteLine("Access denied!");
-}
+//if (passwordCheck == password)
+//{
+//    Console.WriteLine("Access granted.");
+//}
+//else if (password != passwordCheck)
+//{
+//    Console.WriteLine("Access denied!");
+//}
 
 //10. Temperature converter
+
+Console.WriteLine("Do you want to convert to Fahrenheit or Celsius?");
+string convertTemp =  Console.ReadLine();
+
+if(convertTemp == "celsius" || convertTemp == "Celsius")
+{
+    Console.WriteLine("Please put in temperature you want to convert from Fahrenheit to Celsius:");
+    string fahrenheitTemp = Console.ReadLine();
+    double fahrenheit = Convert.ToDouble(fahrenheitTemp);
+    Console.WriteLine("The temperature is " + (fahrenheit / 33.8) + " degrees Celsius. " );
+}
+else if (convertTemp == "fahrenheit" || convertTemp == "Fahrenheit") {
+    Console.WriteLine("Please put in temperature you want to convert from Celsius to Fahrenheit:");
+    string celsiusTemp = Console.ReadLine();
+    double celsius = Convert.ToDouble(celsiusTemp);
+    Console.WriteLine("The temperature is " + (celsius * 33.8) + " degrees Fahrenheit. ");
+}
+
+
+
+
+
