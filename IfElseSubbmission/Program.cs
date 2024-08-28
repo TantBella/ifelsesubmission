@@ -34,30 +34,45 @@
 
 //3. Grade system
 
-Console.WriteLine("Please put in your test score.");
-string testScoreString = Console.ReadLine();
+//Console.WriteLine("Please put in your test score.");
+//string testScoreString = Console.ReadLine();
 
-int testScore = Convert.ToInt32(testScoreString);
+//int testScore = Convert.ToInt32(testScoreString);
 
-if (testScore >= 90 && testScore <= 100)
-{
-    Console.WriteLine("You got an A! Good job!");
+//if (testScore >= 90 && testScore <= 100)
+//{
+//    Console.WriteLine("You got an A! Good job!");
+//}
+//if (testScore >=80  && testScore <= 89)
+//{
+//    Console.WriteLine("You got a B. Well done.");
+//}
+//if (testScore >= 70 && testScore <= 79)
+//{
+//    Console.WriteLine("You got a C. Keep practicing!");
+//}
+//if (testScore >= 60 && testScore <= 69)
+//{
+//    Console.WriteLine("You got a D. Keep practicing!");
+//}
+//else if (testScore < 60)
+//{
+//    Console.WriteLine("You got a F.. ");
+//}
+
+//4. Leap year checker 0=true 1 = false
+
+Console.WriteLine("Please write a random year. (Four numbers)");
+string randomYearString = Console.ReadLine();
+int randomYear = int.Parse(randomYearString);
+bool leapYear = (randomYear % 4 == 0 && randomYear % 100 != 0) || (randomYear % 400 == 0);
+
+if (leapYear) {
+    Console.WriteLine(randomYear + " is a leap year. ");
 }
-if (testScore >=80  && testScore <= 89)
+else
 {
-    Console.WriteLine("You got a B. Well done.");
-}
-if (testScore >= 70 && testScore <= 79)
-{
-    Console.WriteLine("You got a C. Keep practicing!");
-}
-if (testScore >= 60 && testScore <= 69)
-{
-    Console.WriteLine("You got a D. Keep practicing!");
-}
-else if (testScore < 60)
-{
-    Console.WriteLine("You got a F.. ");
+    Console.WriteLine(randomYear + " is not a leap year. ");
 }
 
-//4. Leap year checker
+//5. Maximum of three
