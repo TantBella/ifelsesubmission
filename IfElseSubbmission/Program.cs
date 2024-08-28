@@ -201,13 +201,13 @@ if(convertTemp == "celsius" || convertTemp == "Celsius")
     Console.WriteLine("Please put in temperature you want to convert from Fahrenheit to Celsius:");
     string fahrenheitTemp = Console.ReadLine();
     double fahrenheit = Convert.ToDouble(fahrenheitTemp);
-    Console.WriteLine("The temperature is " + (fahrenheit / 33.8) + " degrees Celsius. " );
+    Console.WriteLine("The temperature is " + ((fahrenheit-32)*5/9 ) + " degrees Celsius. " );
 }
 else if (convertTemp == "fahrenheit" || convertTemp == "Fahrenheit") {
     Console.WriteLine("Please put in temperature you want to convert from Celsius to Fahrenheit:");
     string celsiusTemp = Console.ReadLine();
     double celsius = Convert.ToDouble(celsiusTemp);
-    Console.WriteLine("The temperature is " + (celsius * 33.8) + " degrees Fahrenheit. ");
+    Console.WriteLine("The temperature is " + (((celsius*9)/5)+32 ) + " degrees Fahrenheit. ");
 }
 
 
